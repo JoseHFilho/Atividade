@@ -31,11 +31,12 @@ void bubbleSort(int vetor[], int tamanho, long long *comparacoes, long long *mov
                 int temp = vetor[j];
                 vetor[j] = vetor[j + 1];
                 vetor[j + 1] = temp;
-                (*movimentacoes)++;
+                (*movimentacoes) += 3;
             }
         }
     }
 }
+
 
 // aqui praticamente a mesma coisa mas so que no algoritimo bubble
 void selectionSort(int vetor[], int tamanho, long long *comparacoes, long long *movimentacoes) {
@@ -55,10 +56,11 @@ void selectionSort(int vetor[], int tamanho, long long *comparacoes, long long *
             int temp = vetor[i];
             vetor[i] = vetor[min];
             vetor[min] = temp;
-            (*movimentacoes)++;
+            (*movimentacoes) += 3;
         }
     }
 }
+
 
 // aqui vai ser executado o bubble e contar o tempo que foi necessario
 Resultado executarBubble(int tamanho) {
