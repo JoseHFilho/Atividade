@@ -143,3 +143,25 @@ int main() {
 
     return 0;
 }
+
+/*
+Conclusão:
+
+Depois de executar os dois algoritmos com os vetores em ordem decrescente,
+eu pude perceber que os dois têm complexidade O(n²), ou seja, o tempo de
+execução cresce bastante conforme o tamanho do vetor aumenta.
+
+No entanto, analisando os resultados, deu para notar que o Bubble Sort
+faz muitas movimentações, porque ele troca os elementos várias vezes
+durante o processo. Já o Selection Sort também faz muitas comparações,
+mas realiza menos trocas, pois ele só troca os elementos uma vez por
+posição.
+
+Por isso, para esse exercício específico (vetor em ordem decrescente),
+o Selection Sort acabou sendo mais eficiente que o Bubble Sort,
+principalmente por causa da menor quantidade de movimentações.
+
+Mesmo assim, deu para entender que nenhum dos dois é ideal para
+vetores muito grandes, como o de 10000 posições, pois ambos são
+algoritmos quadráticos.
+*/
